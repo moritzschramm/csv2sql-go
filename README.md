@@ -1,6 +1,6 @@
-# cvs2sql
+# csv2sql
 
-Inserts CVS records into MySQL database
+Inserts CSV records into MySQL database
 
 ## Setup
 There is a prepared `docker-compose.yml` file to make things easier. 
@@ -15,7 +15,7 @@ If you haven't installed docker, you have to create your own MySQL instance
 ```
 go run main.go -d="," -table="<tablename>" -max_conns=145 <filename>
 ```
-Whereas -d is the comma used in your .csv file
+Whereas -d is the delimiter used in your .csv file
 Usually you only need to run:
 ```
 go run main.go <filename>
